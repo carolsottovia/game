@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet"/>
+    <style type="text/css">
+      img{
+        max-width: 100%;
+        width: 395px;
+        height: 395px;
+        object-fit: cover;
+        object-position: bottom;
+      }
+    </style>
+    </head>
+<body>
+
+  <!-- 👍 YOUR HTML HERE 👍 -->
+  <img id="inn" src="https://www.hrw.org/sites/default/files/styles/16x9_430x240/public/multimedia_images_2019/201901eca_eu_libya_main.jpg?itok=6K7NCYJ2" alt="" />
+  <img id="dagger" src="https://www.aceros-de-hispania.com/image/toledo-swords/toledo-swords.jpg" alt="" />
+  <img id="bag" src="https://www.medieval-shop.co.uk/8568-home_default/medieval-bag-with-closing-horn.jpg" alt="" />
+ 
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+
+</body>
+</html>
